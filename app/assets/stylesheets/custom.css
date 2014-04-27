@@ -1,0 +1,110 @@
+.left-content {
+  height:100%;
+  width:240px;
+  margin: 10px;
+  float: left;
+  position: relative;
+}
+
+.margintop15{
+  margin-top: 15px;
+}
+
+
+.nav.pull-right > li > a {
+  border:0;
+  color:#ccc;
+}
+
+/*********** SEARCH RESULTS *************/
+
+.result-box {
+  border-radius: 15px;
+  background: #bdc3c7;
+  padding: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  color:#999999;
+}
+.result-box-main-img img {
+  border-radius: 15px;
+}
+.result-box-other-images > a > img {
+  width:32%;
+  margin-top:20px;
+}
+.result-box h2 {
+  font-size:16px;
+  margin: 0;
+}
+.result-box a {
+  color:#c5b676;
+}
+
+.underline{
+  text-decoration: underline;
+  text-transform: capitalize;  
+}
+.result-box-main-img-shadow
+{
+  width:164px;
+  height:34px;
+  background-image:url("flower.png");
+  /*url(../images/elements/result-box-main-img-shadow.png);*/
+  position:relative;
+  top:178px;
+}
+
+.outer-wrapper { background-color:#f4f2e5; position: relative;}
+#footer
+{
+  height:40px;
+  background-color:#95a5a6;
+  margin:0 auto;
+}
+
+#footer .watermark {
+
+  background: url('assets/images/flower.png') no-repeat center #d6cea2;
+  background-color: #7f8c8d;
+  height:80px;
+  -moz-border-radius-bottomright: 15px;
+  border-bottom-right-radius: 15px;
+  -moz-border-radius-bottomleft: 15px;
+  border-bottom-left-radius: 15px;
+}
+#footer-nav {
+  margin:0;
+
+}
+#footer div.container
+{
+  height: 40px;
+}
+#footer div.row-fluid ul.nav li a{
+  color:black;
+}
+#footer div.row-fluid ul.nav li a:hover
+{
+  color: white;
+ background-color:transparent;
+}
+
+{
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -40px; /* the bottom margin is the negative value of the footer's height */
+}
+
+.footer, .push {
+    height: 40px; /* .push must be the same height as .footer */
+}

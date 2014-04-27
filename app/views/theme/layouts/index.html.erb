@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Food Deals</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+  <body> 
+  	<%= render "theme/layouts/headernavigationbar" %>
+  	<div class="container wrapper">
+			<%= yield %>
+		</div>
+    <div class="push"></div>
+		<footer class="footer">
+			<%= render "theme/layouts/footer" %>
+		</footer>
+	</body>	
+</html>		
+

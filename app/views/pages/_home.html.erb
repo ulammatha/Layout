@@ -1,0 +1,11 @@
+<div class="jumbotron">
+<h2>Welcome to Bikers zone, Please Login for Pin changes</h2>
+<p>
+	<% if user_signed_in? %>
+	<%=link_to "Logout",destroy_user_session_path,method: :delete,class:"btn btn-default btn-lg" %>
+	<% else %>
+		<%=link_to "Login",new_user_session_path,class:"btn btn-default btn-lg" %>
+		<%=link_to "Sign Up",new_user_registration_path,class:"btn btn-primary btn-lg" %>
+		<%end%>
+	</P>
+</div>

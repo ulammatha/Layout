@@ -1,0 +1,18 @@
+<% if @restaurants.any?%>
+<% @restaurants.each do |res| %>
+    <div class="result-box">
+      <div class="result-box-main-img spandisplay_artist_img3">
+            <%=link_to image_tag(res.image.url(:thumb)),restaurant_path(res) %>
+            <div class="result-box-main-img-shadow">
+            </div>
+        </div>
+        <div class="result-box-info span4">
+          <div class="floatleft">
+            <h2 class="underline"><%=res.description %></h2>           
+          </div>
+        </div>
+    </div>    
+  <%end%> 
+  <% else %>
+  <% end %>
+<div class="container text-center"><%= will_paginate @restaurants,renderer: BootstrapPagination::Rails %></div>
